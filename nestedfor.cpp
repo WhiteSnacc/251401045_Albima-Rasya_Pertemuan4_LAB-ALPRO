@@ -2,18 +2,16 @@
 #include <cstdlib>
 using namespace std;
 
-int main(){
+int main() {
     system ("cls");
-    int a, b;
+    int x;
+    
+    cout<<"Masukkan panjang alas : "; cin>>x;
 
-    cout<<"Masukkan panjang baris : "; cin>>b;
-    cout<<"Masukkan panjang kolom : "; cin>>a;
-
-    for (int y = b; y <= 5; y++) { //baris
-        cout<<"|";
-        for (int x = a; x <= 5; x++) { //kolom
-            cout<<"-";
+    for (int i = 1; i <= x; i++) {
+        for (int j = 1; j <= i; j++) {
+            cout << " * ";
         }
-        cout<<"\n";
+        cout<<endl;
     }
 }
